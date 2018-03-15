@@ -1,5 +1,5 @@
 /**
- * @author alteredq / http://alteredqualia.com/
+ * altered from original source code by alteredq / http://alteredqualia.com/
  */
 
 THREE.EffectComposer = function( renderer, renderTarget ) {
