@@ -115,9 +115,7 @@
 				stats.domElement.style.zIndex = 100;
 				container.appendChild( stats.domElement );
 				// LOADER
-				var loader = new THREE.JSONLoader(),
-					callbackObj = function( geometry ) { createScene( geometry, 0, 0, 0, 0 ) };
-				loader.load( "tron/trondisk.js", callbackObj );
+				geometry = new THREE.BoxGeometry(1,1,1);
 				// COMPOSERS
 				var renderTargetParameters = { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat, stencilBufer: false };
 				renderTargetOcl = new THREE.WebGLRenderTarget( SCREEN_WIDTH/2, SCREEN_HEIGHT/2, renderTargetParameters );
