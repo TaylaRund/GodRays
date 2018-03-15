@@ -1,9 +1,3 @@
-/*
- * THREE.Extras.UTils contains extra useful methods
- * 
- * @author Thibaut 'BKcore' Despoulain <http://bkcore.com>
- * 
- */
 
 THREE = THREE || {};
 THREE.Extras = THREE.Extras || {};
