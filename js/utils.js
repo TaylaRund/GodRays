@@ -7,8 +7,8 @@ THREE.Extras.Utils = THREE.Extras.Utils || {};
 THREE.Extras.Utils.projectOnScreen = function(object, camera)
 {
 	var mat = new THREE.Matrix4();
-	mat.multiply( camera.matrixWorldInverse, object.matrixWorld);
-	mat.multiply( camera.projectionMatrix , mat);
+	mat.multiplyMatrices( camera.matrixWorldInverse, object.matrixWorld);
+	mat.multiplyMatrices( camera.projectionMatrix , mat);
 
 	var c = mat.n44;
 	var lPos = new THREE.Vector3(mat.n14/c, mat.n24/c, mat.n34/c);
