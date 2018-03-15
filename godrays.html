@@ -83,6 +83,11 @@
 				scene.add( pointLight );
 				cameraLight = new THREE.PointLight( 0x666666 );
 				camera.add(cameraLight);
+				
+				var moonGeo = new THREE.BoxGeometry( 1, 1, 1 );
+			        var moonMat = new THREE.MeshBasicMaterial( 0x0000000);
+			        var moon = new THREE.Mesh( moonGeo, moonMat );
+			        scene.add( moon );
 				// OCL SCENE
 				oclscene = new THREE.Scene();
 				oclscene.add( new THREE.AmbientLight( 0xffffff ) );
