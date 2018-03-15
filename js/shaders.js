@@ -1,4 +1,4 @@
-/*!
+/*
  * THREE.Extras.Shaders contains extra Fx shaders like godrays
  * 
  * @author Thibaut 'BKcore' Despoulain <http://bkcore.com>
